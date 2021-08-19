@@ -4,7 +4,7 @@ import android.content.ContentValues
 import android.content.Context
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
-import com.example.ownerapp.Utils.Constants
+import com.example.branchapp.utils.Constants
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot

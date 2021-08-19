@@ -1,6 +1,5 @@
 package com.example.ownerapp.mvvm.repository
 
-import android.content.ContentValues
 import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
@@ -8,11 +7,10 @@ import android.content.SharedPreferences
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.MutableLiveData
 import com.example.branchapp.activities.MainActivity
-import com.example.ownerapp.Utils.Constants
-import com.example.ownerapp.Utils.Constants.BRANCH_ID
-import com.example.ownerapp.Utils.Constants.BRANCH_PASS
+import com.example.branchapp.utils.Constants
+import com.example.branchapp.utils.Constants.BRANCH_ID
+import com.example.branchapp.utils.Constants.BRANCH_PASS
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -45,10 +43,12 @@ class AuthRepository(var context: Context) : BaseRepository(context) {
                         if (firebasePass == pass) {
                             editor.putBoolean("isLoggedIn", true)
                             editor.apply()
-                            val intent= Intent(context,MainActivity::class.java)
+                            val intent = Intent(context, MainActivity::class.java)
+                            intent.flags =
+                                Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                             context.startActivity(intent)
                         } else {
-                            Toast.makeText(context, "Wrong Wrong Pass", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context, "Wrong Password", Toast.LENGTH_SHORT).show()
                         }
                     } else {
                         Toast.makeText(context, "Wrong ID", Toast.LENGTH_SHORT).show()

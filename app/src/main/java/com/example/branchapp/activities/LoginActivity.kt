@@ -17,7 +17,7 @@ import com.example.ownerapp.di.components.DaggerFactoryComponent
 import com.example.ownerapp.di.modules.FactoryModule
 import com.example.ownerapp.di.modules.RepositoryModule
 import com.example.ownerapp.mvvm.repository.AuthRepository
-import com.example.ownerapp.mvvm.viewmodles.AuthViewModel
+import com.example.branchapp.mvvm.viewmodles.AuthViewModel
 
 
 import com.google.firebase.auth.FirebaseAuth

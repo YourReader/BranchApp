@@ -1,4 +1,4 @@
-package com.example.ownerapp.mvvm.viewmodles
+package com.example.branchapp.mvvm.viewmodles
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

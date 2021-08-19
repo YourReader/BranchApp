@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    android:label="fragment_home"
+    app:startDestination="@id/homeFrag">
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.example.branchapp.fragment.Home"
+        android:label="homeFrag" >
+        <action
+            android:id="@+id/action_home2_to_settings2"
+            app:destination="@id/nav_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="Settings"
+        android:label="Settings" >
+        <action
+            android:id="@+id/action_settings2_to_home2"
+            app:destination="@id/homeFrag" />
+    </fragment>
+</navigation>

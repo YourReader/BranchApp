@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.ownerapp.mvvm.repository.AuthRepository
 import com.example.ownerapp.mvvm.repository.BaseRepository
 import com.example.ownerapp.mvvm.repository.MainRepository
-import com.example.ownerapp.mvvm.viewmodles.AuthViewModel
+import com.example.branchapp.mvvm.viewmodles.AuthViewModel
 import com.example.ownerapp.mvvm.viewmodles.MainViewModel
 
 @Suppress("UNCHECKED_CAST")
