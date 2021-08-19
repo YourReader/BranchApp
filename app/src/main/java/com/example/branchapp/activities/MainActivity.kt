@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         isLogged = isLoggedIn.getBoolean("isLoggedIn", false)
 
         if (isLogged) {
-            Log.d(TAG, "onCreate: Branch Manager Logged IN")
+            Log.d(TAG, "onCreate: Manager Logged IN")
         } else {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
@@ -62,7 +62,6 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun init() {
-
         val window: Window = this.window
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
