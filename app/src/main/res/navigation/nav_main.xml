@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/homeFrag"
         android:name="com.example.branchapp.fragment.Home"
-        android:label="homeFrag" >
+        android:label="Home" >
         <action
             android:id="@+id/action_home2_to_settings2"
             app:destination="@id/nav_settings" />
