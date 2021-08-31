@@ -64,7 +64,7 @@ class Home : Fragment() {
 
         val series = ValueLineSeries()
         series.color = -0xa9480f
-
+        series.addPoint(ValueLinePoint("Start", 0f))
         series.addPoint(ValueLinePoint("Jan", 1000f))
         series.addPoint(ValueLinePoint("Feb", 3000f))
         series.addPoint(ValueLinePoint("Mar", 3200f))
@@ -77,9 +77,11 @@ class Home : Fragment() {
         series.addPoint(ValueLinePoint("Oct", 3000f))
         series.addPoint(ValueLinePoint("Nov", 1000f))
         series.addPoint(ValueLinePoint("Dec", 3000f))
-
+        series.addPoint(ValueLinePoint("End", 0f))
         binding.cubiclinechart.addSeries(series)
         binding.cubiclinechart.startAnimation()
+
+
 
         return binding.root
     }
