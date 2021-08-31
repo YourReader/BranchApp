@@ -26,6 +26,11 @@ class Settings : Fragment() {
         _binding = FragmentSettingsBinding.inflate(inflater, container, false)
         init()
 
+        binding.SignOutSettings.setOnClickListener {
+            viewModel.sendUserToLoginActivity()
+            requireActivity().finish()
+        }
+
 
         return binding.root
     }

@@ -2,10 +2,11 @@ package com.example.ownerapp.mvvm.repository
 
 import android.content.ContentValues
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
+import com.example.branchapp.activities.LoginActivity
 import com.example.branchapp.utils.Constants
-
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -44,7 +45,13 @@ abstract class BaseRepository(private var contextBase: Context) {
         return branchesList
     }
 
+    fun sendUserToLoginActivity() {
+        Intent(contextBase, LoginActivity::class.java).also {
+            Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            contextBase.startActivity(it)
+        }
 
+    }
 
 
 }

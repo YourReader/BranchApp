@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_centerInParent="true"
-            android:fontFamily="@font/montserratsemibold"
+            android:fontFamily="@font/semibold"
             android:text="@string/branch_manager"
             android:textAlignment="center"
             android:textAllCaps="false"
@@ -45,7 +45,7 @@
         android:layout_below="@id/lg_preview_logo"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/montserratsemibold"
+        android:fontFamily="@font/semibold"
         android:gravity="center_horizontal"
         android:text="@string/proceed_with_your"
         android:textAlignment="center"
@@ -60,7 +60,7 @@
         android:layout_below="@id/demo_txt_1"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/montserratsemibold"
+        android:fontFamily="@font/semibold"
         android:gravity="center_horizontal"
         android:text="@string/login"
         android:textAlignment="center"
@@ -88,7 +88,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
             android:layout_weight="1"
-            android:fontFamily="@font/montserratsemibold"
+            android:fontFamily="@font/semibold"
             android:hint="@string/branch_name" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -103,7 +103,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
-        android:fontFamily="@font/montserratregular"
+        android:fontFamily="@font/regular"
         android:hint="@string/branch_id"
         android:textAllCaps="false"
 
@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_pass"
             android:drawablePadding="10dp"
-            android:fontFamily="@font/montserratsemibold"
+            android:fontFamily="@font/semibold"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,7 +128,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
-        android:fontFamily="@font/montserratregular"
+        android:fontFamily="@font/regular"
         android:hint="@string/branch_password"
         android:textAllCaps="false"
         app:passwordToggleEnabled="true">
@@ -139,7 +139,7 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_password"
             android:drawablePadding="10dp"
-            android:fontFamily="@font/montserratsemibold"
+            android:fontFamily="@font/semibold"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -150,7 +150,7 @@
         android:layout_gravity="end"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="31dp"
-        android:fontFamily="@font/montserratregular"
+        android:fontFamily="@font/regular"
         android:gravity="center_horizontal"
         android:text="@string/forgot_password"
         android:textAlignment="center"
@@ -166,7 +166,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/btn_circular"
-        android:fontFamily="@font/montserratsemibold"
+        android:fontFamily="@font/semibold"
         android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="@color/white"

@@ -29,8 +29,7 @@ class LoginActivity : AppCompatActivity() {
     private val TAG = "LoginActivity"
     private lateinit var mAuth: FirebaseAuth
     var list = ArrayList<String>()
-    private var currentuser: FirebaseUser? = null
-    private var verifiedboolean = false
+
 
 
     private lateinit var component: DaggerFactoryComponent
